@@ -7,7 +7,7 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [1]
 
 The Iris Data Set was first examined by British statistician Ronald Aylmer Fisher in his paper 'The use of multiple measurements in taxonomic problems' published in 1936 [2]. In the paper he credits Dr E. Anderson for the data measurement and it is sometimes also referred to as Anderson's Iris Dats Set [3] in the literature because of this.
 
-The data is comprised of 150 measurements in centimetres. The measurements are of the flowers of fifty plants of three species of Iris; Iris-setosa, Iris-versicolor & Iris-virginica. Four flower measurements are given for each species; Sepal length, Sepal width, Petal length & Petal width [2].
+The data is comprised of 150 measurements in centimetres. The measurements are of the flowers of fifty plants of three species of Iris; Iris-setosa, Iris-versicolor & Iris-virginica referred to as classes. Four flower measurements are given for each class; Sepal length, Sepal width, Petal length & Petal width [2]. One class is linearly separable from the other 2; the latter are not linearly separable from each other [1].
 
 A search of the literature reveals that the data set has become widely used as testing data essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [4] have observed that they are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
  
@@ -16,6 +16,7 @@ A search of the literature reveals that the data set has become widely used as t
 |35         | 4.9,3.1,1.5,0.1 | 4.9,3.1,1.5,0.2 |
 |38         | 4.9,3.1,1.5,0.1 | 4.9,3.6,1.4,0.1 |
  
+For the purposes of this project the data in this repository is as taken from the UCI Machine Learning Repository [1].
 
 ---
 ### Iris Data Set Analysis
