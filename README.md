@@ -17,7 +17,10 @@ The data is comprised of 150 measurements. The measurements are of the flowers o
 ---
 ### References
 
-[1] Iris data set. UCI Machine Learning Repository. University of California, Irvine, School of Information and Computer Sciences
+[1] Iris data set. UCI Machine Learning Repository. 
+	University of California, Irvine, School of Information and Computer Sciences
 	https://archive.ics.uci.edu/ml/datasets/iris Retrieved April 4th 2018.
+
 [2] Fisher,R.A. "The use of multiple measurements in taxonomic problems" Annual Eugenics, 7, Part II, 179-188 (1936)
+
 ---
