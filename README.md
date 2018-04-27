@@ -11,10 +11,10 @@ The data is comprised of 150 measurements in centimetres. The measurements are o
 
 A search of the literature reveals that the data set has become widely used as testing data essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [4] have observed that they are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
  
-                                         | Vector No.| UCI Data        | Fisher Data     |
-                                         |:---------:|:---------------:|:---------------:|
-                                         |35         | 4.9,3.1,1.5,0.1 | 4.9,3.1,1.5,0.2 |
-                                         |38         | 4.9,3.1,1.5,0.1 | 4.9,3.6,1.4,0.1 |
+| Vector No.| UCI Data        | Fisher Data     |
+|:---------:|:---------------:|:---------------:|
+|35         | 4.9,3.1,1.5,0.1 | 4.9,3.1,1.5,0.2 |
+|38         | 4.9,3.1,1.5,0.1 | 4.9,3.6,1.4,0.1 |
  
 
 ---
