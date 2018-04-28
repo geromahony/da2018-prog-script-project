@@ -22,7 +22,7 @@ For the purposes of this project the data in this repository is as taken from th
 ### Iris Data Set Analysis
 
 
-The Iris data set is easily imported for data analysis using the [_Pandas_](http://pandas.pydata.org/) module _read_csv_ method as follows:
+The Iris data set is easily imported for data analysis using the [_Pandas_](http://pandas.pydata.org/) library, _read_csv_ method, as follows:
 
 ```python
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
@@ -31,7 +31,7 @@ iris_data = pd.read_csv('./IrisData/iris.data.csv',
 ```
 The data was imported with named columns for the sepal lengths/widths, petal lengths/widths and Iris species class.
 
-The first thing to do with the data is a basic analysis where the max, min, median(50th percentile) and sandard deviation are requested. This is easily facillitated with the _Pandas_ module as folows:
+The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facillitated with the _Pandas_ module as folows:
 ```python
 print(iris_data.describe(percentiles=[0.5]))
 ```
@@ -45,6 +45,20 @@ This results in the following output:
 |min  |   4.300000  |   2.000000  |    1.000000  |   0.100000  |
 |50%  |   5.800000  |   3.000000  |    4.350000  |   1.300000  |
 |max  |   7.900000  |   4.400000  |    6.900000  |   2.500000  |
+
+As can be seen from the table above the data is described in terms of mean, standard deviation, min, median, max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
+
+It is also possible to isolate each class data to be described separately if required as follows:
+
+| Iris-setosa |
+|     |sepal_length | sepal_width | petal_length | petal_width |
+|:---:|:-----------:|:-----------:|:------------:|:-----------:|
+|count|   50.00000  |  50.000000  |   50.000000  |   50.00000  |
+|mean |    5.00600  |   3.418000  |    1.464000  |    0.24400  |
+|std  |    0.35249  |   0.381024  |    0.173511  |    0.10721  |
+|min  |    4.30000  |   2.300000  |    1.000000  |    0.10000  |
+|50%  |    5.00000  |   3.400000  |    1.500000  |    0.20000  |
+|max  |    5.80000  |   4.400000  |    1.900000  |    0.60000  |
 
 ---
 ### Conclusions
