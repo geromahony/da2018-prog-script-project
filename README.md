@@ -50,8 +50,8 @@ As can be seen from the table above the data is described in terms of mean, stan
 
 It is also possible to isolate each class data to be described separately if required as follows:
 
-|:------------------------------------------------------------:|
-| Iris-setosa                                                  |
+
+#### Iris-setosa
 
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
@@ -61,6 +61,29 @@ It is also possible to isolate each class data to be described separately if req
 |min  |    4.30000  |   2.300000  |    1.000000  |    0.10000  |
 |50%  |    5.00000  |   3.400000  |    1.500000  |    0.20000  |
 |max  |    5.80000  |   4.400000  |    1.900000  |    0.60000  |
+
+#### Iris-versicolor
+
+|     |sepal_length | sepal_width | petal_length | petal_width |
+|:---:|:-----------:|:-----------:|:------------:|:-----------:|
+|count|  50.000000  |  50.000000  |   50.000000  |  50.000000  |
+|mean |   5.936000  |   2.770000  |    4.260000  |   1.326000  |
+|std  |   0.516171  |   0.313798  |    0.469911  |   0.197753  |
+|min  |   4.900000  |   2.000000  |    3.000000  |   1.000000  |
+|50%  |   5.900000  |   2.800000  |    4.350000  |   1.300000  |
+|max  |   7.000000  |   3.400000  |    5.100000  |   1.800000  |
+
+#### Iris-virginica
+
+|     |sepal_length | sepal_width | petal_length | petal_width |
+|:---:|:-----------:|:-----------:|:------------:|:-----------:|
+|count|   50.00000  |  50.000000  |   50.000000  |   50.00000  |
+|mean |    6.58800  |   2.974000  |    5.552000  |    2.02600  |
+|std  |    0.63588  |   0.322497  |    0.551895  |    0.27465  |
+|min  |    4.90000  |   2.200000  |    4.500000  |    1.40000  |
+|50%  |    6.50000  |   3.000000  |    5.550000  |    2.00000  |
+|max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
+
 
 ---
 ### Conclusions
