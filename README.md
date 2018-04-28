@@ -22,14 +22,14 @@ For the purposes of this project the data in this repository is as taken from th
 ### Iris Data Set Analysis
 
 
-The Iris data set is easily imported for data analysis using the _Pandas_ module _read_csv_ method as follows:
+The Iris data set is easily imported for data analysis using the [_Pandas_](http://pandas.pydata.org/) module _read_csv_ method as follows:
 
 ```python
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
                         names=['sepal_length', 'sepal_width',
                                'petal_length', 'petal_width', 'iris_class'])
 ```
-The data waas imported with named columns for the sepal lengths/widths, petal lengths/widths and Iris species class.
+The data was imported with named columns for the sepal lengths/widths, petal lengths/widths and Iris species class.
 
 The first thing to do with the data is a basic analysis where the max, min, median(50th percentile) and sandard deviation are requested. This is easily facillitated with the _Pandas_ module as folows:
 ```python
@@ -39,12 +39,12 @@ This results in the following output:
 
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
-count    150.000000   150.000000    150.000000   150.000000
-mean       5.843333     3.054000      3.758667     1.198667
-std        0.828066     0.433594      1.764420     0.763161
-min        4.300000     2.000000      1.000000     0.100000
-50%        5.800000     3.000000      4.350000     1.300000
-max        7.900000     4.400000      6.900000     2.500000
+|count| 150.000000  | 150.000000  |  150.000000  | 150.000000  |
+|mean |   5.843333  |   3.054000  |    3.758667  |   1.198667  |
+|std  |   0.828066  |   0.433594  |    1.764420  |   0.763161  |
+|min  |   4.300000  |   2.000000  |    1.000000  |   0.100000  |
+|50%  |   5.800000  |   3.000000  |    4.350000  |   1.300000  |
+|max  |   7.900000  |   4.400000  |    6.900000  |   2.500000  |
 
 ---
 ### Conclusions
