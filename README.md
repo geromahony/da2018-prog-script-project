@@ -3,6 +3,13 @@
 
 Data:- [Iris Data Set](IrisData/iris.data.txt) [1]
 
+---
+### Table of Contents
+**[Introduction](#Introduction)**<br>
+**[Iris Data Set Analysis](#Iris-Data-Set-Analysis)**<br>
+**[Conclusions](#Conclusions)**<br>
+**[References](#References)**<br>
+
 ### Introduction
 
 The Iris Data Set was first examined by British statistician Ronald Aylmer Fisher in his paper 'The use of multiple measurements in taxonomic problems' published in 1936 [2]. In the paper he credits Dr E. Anderson for the data measurement and it is sometimes also referred to as Anderson's Iris Dats Set [3] in the literature because of this.
@@ -25,6 +32,8 @@ For the purposes of this project the data in this repository is as taken from th
 The Iris data set is easily imported for data analysis using the [_Pandas_](http://pandas.pydata.org/) library, _read_csv_ method, as follows:
 
 ```python
+import pandas as pd
+
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
                         names=['sepal_length', 'sepal_width',
                                'petal_length', 'petal_width', 'iris_class'])
@@ -49,7 +58,12 @@ This results in the following output:
 As can be seen from the table above the data is described in terms of mean, standard deviation, min, median, max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
 
 It is also possible to isolate each class data to be described separately if required as follows:
+```python
+setosa = iris_data["iris_class"] == "Iris-setosa"
 
+print(iris_data[setosa].describe(percentiles=[.5]))
+```
+The variable setosa is _True_ for all Iris-setosa class and is used subsequently to describe only that class resulting in the following output:
 
 #### Iris-setosa
 
@@ -61,6 +75,8 @@ It is also possible to isolate each class data to be described separately if req
 |min  |    4.30000  |   2.300000  |    1.000000  |    0.10000  |
 |50%  |    5.00000  |   3.400000  |    1.500000  |    0.20000  |
 |max  |    5.80000  |   4.400000  |    1.900000  |    0.60000  |
+
+The same method can be used to describe the other two species classes:
 
 #### Iris-versicolor
 
@@ -84,6 +100,7 @@ It is also possible to isolate each class data to be described separately if req
 |50%  |    6.50000  |   3.000000  |    5.550000  |    2.00000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
+While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format.
 
 ---
 ### Conclusions
