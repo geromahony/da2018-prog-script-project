@@ -50,8 +50,9 @@ As can be seen from the table above the data is described in terms of mean, stan
 
 It is also possible to isolate each class data to be described separately if required as follows:
 
-| Iris-setosa                                                  |
 |:------------------------------------------------------------:|
+| Iris-setosa                                                  |
+
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
 |count|   50.00000  |  50.000000  |   50.000000  |   50.00000  |
