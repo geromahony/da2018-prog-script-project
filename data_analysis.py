@@ -21,9 +21,40 @@
 #  5. Write a summary of your investigations.
 #  6. Include supporting tables and graphics as you deem necessary.
 
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
+f = open('outfile.dat', 'w')
 
+# Read in the Iris data set using Pandas to a data frame
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
                         names=['sepal_length', 'sepal_width',
                                'petal_length', 'petal_width', 'iris_class'])
+
+# First step is to get a basic description of the data, including max, min, median & standard deviation
+# print(iris_data["iris_class"].describe())
+data_string = str(iris_data.describe(percentiles=[0.5]))
+# data_string =
+# print(data_string)
+f.write(data_string)
+
+# data_string = str(iris_data.groupby('iris_class').describe())
+# f.write(data_string)
+f.close()
+
+# setosa = iris_data["iris_class"] == "Iris-setosa"
+# setosa_data = iris_data[setosa]
+# print(setosa_data)
+
+
+
+
+
+
+
+
+
+
+
+
