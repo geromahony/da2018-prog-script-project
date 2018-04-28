@@ -5,10 +5,10 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [1]
 
 ---
 ### Table of Contents
-**[Introduction](#Introduction)**<br>
-**[Iris Data Set Analysis](#Iris-Data-Set-Analysis)**<br>
-**[Conclusions](#Conclusions)**<br>
-**[References](#References)**<br>
+**[Introduction](https://github.com/geromahony/da2018-prog-script-project#introduction)**
+**[Iris Data Set Analysis](https://github.com/geromahony/da2018-prog-script-project#iris-data-set-analysis)**
+**[Conclusions](https://github.com/geromahony/da2018-prog-script-project#conclusions)**
+**[References](https://github.com/geromahony/da2018-prog-script-project#references)**
 
 ### Introduction
 
