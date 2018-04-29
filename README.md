@@ -209,6 +209,7 @@ plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
 ![alt text](../master/images/scatter_plot.png "Iris Data Set - Scatter Plot")
 
 It is not very clear from the similar colour of the two columns plotted against each other in the above plot so the [_Seaborn_](https://seaborn.pydata.org/) statistical visualisation library provides an easier method to generate a more descernable plot:
+
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
