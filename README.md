@@ -121,11 +121,14 @@ The same method can be used to describe the other two species classes:
 |75%  |    6.90000  |   3.175000  |    5.875000  |    2.30000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
+
+While numerical statistical descriptions are useful in getting an initial summarisation of the data, it may be easier to make an assesment of the data by displaying it visually in plot format. 
+
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
 
-While numerical statistical descriptions are useful in getting an initial summarisation of the data, it may be easier to make an assesment of the data by displaying it visually in plot format. 
+---
 
 #### Data Visualisation
 ##### Box Plot
@@ -200,11 +203,12 @@ This time the plot and axis titles are defined using the _suptitle_ & _text_ met
 
 ![alt text](../master/images/histogram_plot.png "Iris Data Set - Histogram Plot")
 
+
+An examination of the histogram plots show that the data has multiple peaks which indicates that there are outliers in the data and also seperate groupings within this data so it is worth looking at additional plots such as scatters.
+
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
-
-An examination of the histogram plots show that the data has multiple peaks which indicates that there are outliers in the data and also seperate groupings within this data so it is worth looking at additional plots such as scatters.
 
 ##### Scatter Plot
 
