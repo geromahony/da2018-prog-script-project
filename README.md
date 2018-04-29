@@ -10,7 +10,7 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
  	* **[Data Import](#data-import)**<br>
     * **[Data Description](#data-description)**<br>
     	* **[Box Plot](#box-plot)**<br>
-    	* **[Histogram Plot](#histogram-plot)**<br>v
+    	* **[Histogram Plot](#histogram-plot)**<br>
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -143,6 +143,10 @@ plt.savefig('./images/box_plot.png', bbox_inches='tight')
 
 The plot Title and Y Axis label are easily added using the _matplotlib.pyplot_ methods _title_ and _ylabel_. 
 
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
+
 The box plot, when compared to the numbers in the table above for the description, is as expected as the numbers correspond to the diagram:  
 
 ![alt text](../master/images/box_plot.png "Iris Data Set - Box Plot")
@@ -151,11 +155,30 @@ This visual representation doesn't give us much more information apart from the 
 
 ##### Histogram Plot
 
-A histogram is a type of bar chart that displays the frequencies of a data set. It plots the frequency on the vertical axis with the variable being measured on the horixontal axis.
+A histogram is a type of bar chart that displays the frequencies of a data set. It plots the frequency on the vertical axis with the variable being measured on the horixontal axis. Again, the plot is easily generated using Python:
 
+```python
+# Histogram plot of the data set - saved to the images folder in the
+# project repo for inclusion in the readme via an image link
+
+hist = iris_data.hist(column=['sepal_length', 'sepal_width',
+                               'petal_length', 'petal_width'], figsize=(10, 8))
+# plt.title('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.text(-0.7, -8, 'Centimetres')
+plt.text(2.8, -8, 'Centimetres')
+plt.text(-2, 75, 'Frequency', rotation='vertical')
+plt.text(-2, 25, 'Frequency', rotation='vertical')
+plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
+```
+
+This time the plot and axis titles are defined using the _suptitle_ & _text_ methods.
+ 
 ![alt text](../master/images/histogram_plot.png "Iris Data Set - Histogram Plot")
 
-
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
 ---
 ### Conclusions
 <p align="right">
@@ -182,3 +205,4 @@ A histogram is a type of bar chart that displays the frequencies of a data set. 
 	http://www.physics.csbsju.edu/stats/ Retrieved April 29th 2018
 
 ---
+s

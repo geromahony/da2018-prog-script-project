@@ -60,6 +60,8 @@ print(iris_data[virginica].describe())
 # plt.savefig('./images/box_plot.png', bbox_inches='tight')
 # plt.show()
 
+# Histogram plot of the data set - saved to the images folder in the
+# project repo for inclusion in the readme via an image link
 hist = iris_data.hist(column=['sepal_length', 'sepal_width',
                                'petal_length', 'petal_width'], figsize=(10, 8))
 # plt.title('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
