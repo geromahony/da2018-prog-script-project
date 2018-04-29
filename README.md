@@ -152,11 +152,17 @@ The box plot, when compared to the numbers in the table above for the descriptio
 
 ![alt text](../master/images/box_plot.png "Iris Data Set - Box Plot")
 
-This visual representation doesn't give us much more information apart from the outliers shown in the Sepal Width box plot as unfilled circles above and below the max and min whiskers. Given their proximity to the whiskers these can be described as suspected outliers and may deserve further consideration. With this in mind our next visual analysis should be a closer look at the Iris species.
+This visual representation doesn't give us much more information apart from the outliers shown in the Sepal Width box plot as unfilled circles above and below the max and min whiskers. Given their proximity to the whiskers these can be described as suspected outliers and may deserve further consideration. With this in mind our next visual analysis should be a closer look at the Iris species. The box plot can be grouped by the species class as follows:
+
+```python
+# Box plot of the different species by grouping by Iris class
+bps = iris_data.boxplot(by='iris_class', figsize=(10, 8))
+plt.savefig('./images/box_plot_by_class.png', bbox_inches='tight')
+```
 
 ![alt text](../master/images/box_plot_by_class.png "Iris Data Set - Box Plot by Iris Class")
 
-This plot shows us that there are more suspected outliers in the Iris-setosa class in both petal length and width, with on suspected outlier in the Iris-versicolor class for petal length. The Iris-virginica class is also showing a couple of outliers for both sepal length and width. The shapes of the box plots are also interesting in that they are similar and closer together between the Iris Versicolor and Virginica classes. 
+This plot shows us that there are more suspected outliers in the Iris-setosa class in both petal length and width, with one suspected outlier in the Iris-versicolor class for petal length. The Iris-virginica class is also showing a couple of outliers for both sepal length and width. The shapes of the box plots are also interesting in that they are similar and closer together between the Iris Versicolor and Virginica classes suggesting more simiiilarities between these two species of Iris. Further information about the data can be found from histogram plots. 
 
 ##### Histogram Plot
 
@@ -184,6 +190,14 @@ This time the plot and axis titles are defined using the _suptitle_ & _text_ met
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
+
+An examination of the histogram plots show that the data has multiple peaks which indicates that there are outliers in the data and also seperate groupings within this data so it is worth looking at histograms of the individual species.
+
+![alt text](../master/images/histogram_plot_setosa.png "Iris Setosa Data Set - Histogram Plot")
+
+![alt text](../master/images/histogram_plot_versicolor.png "Iris Versicolor Data Set - Histogram Plot")
+
+![alt text](../master/images/histogram_plot_virginica.png "Iris Virginica Data Set - Histogram Plot")
 
 ---
 ### Conclusions
