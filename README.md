@@ -7,6 +7,8 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
 ### Table of Contents
  * **[Introduction](#introduction)**<br>
  * **[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
+ 	* **[Data Import](#data-import)**<br>
+    * **[Data Description](#data-description)**<br>
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -27,7 +29,7 @@ For the purposes of this project the data in this repository is as taken from th
 
 ---
 ### Iris Data Set Analysis
-
+#### Data Import
 
 The Iris data set is easily imported for data analysis using the open source [_Pandas_](http://pandas.pydata.org/) library which provides easy-to-use data structures and data analysis tools for the [_Python_](https://www.python.org/) programming language. The [_Pandas_](http://pandas.pydata.org/) _read_csv_ method can be used to read the Iris data comma seperated values from file as follows:
 
@@ -40,9 +42,10 @@ iris_data = pd.read_csv('./IrisData/iris.data.csv',
 ```
 The data was imported with named columns for the sepal lengths/widths, petal lengths/widths and Iris species class.
 
+#### Data Description
 The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facillitated with the _Pandas_ module as folows:
 ```python
-print(iris_data.describe(percentiles=[0.5]))
+print(iris_data.describe())
 ```
 This results in the following output:
 
@@ -52,16 +55,18 @@ This results in the following output:
 |mean |   5.843333  |   3.054000  |    3.758667  |   1.198667  |
 |std  |   0.828066  |   0.433594  |    1.764420  |   0.763161  |
 |min  |   4.300000  |   2.000000  |    1.000000  |   0.100000  |
+|25%  |   5.100000  |   2.800000  |    1.600000  |   0.300000  |
 |50%  |   5.800000  |   3.000000  |    4.350000  |   1.300000  |
+|75%  |   6.400000  |   3.300000  |    5.100000  |   1.800000  |
 |max  |   7.900000  |   4.400000  |    6.900000  |   2.500000  |
 
-As can be seen from the table above the data is described in terms of mean, standard deviation, min, median, max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
+As can be seen from the table above the data is described in terms of mean, standard deviation, min, 1st Quartile(25th percentile), median(50th percentile), 3rd Quartile(75th percentile) & max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
 
 It is also possible to isolate each class data to be described separately if required as follows:
 ```python
 setosa = iris_data["iris_class"] == "Iris-setosa"
 
-print(iris_data[setosa].describe(percentiles=[.5]))
+print(iris_data[setosa].describe())
 ```
 The variable setosa is _True_ for all Iris-setosa class and is used subsequently to describe only that class resulting in the following output:
 <p align="right">

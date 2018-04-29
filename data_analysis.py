@@ -25,8 +25,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-f = open('outfile.dat', 'w')
-
 # Read in the Iris data set using Pandas to a data frame
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
                         names=['sepal_length', 'sepal_width',
@@ -35,36 +33,35 @@ iris_data = pd.read_csv('./IrisData/iris.data.csv',
 # First step is to get a basic description of the data, including max, min, median & standard deviation
 print('Descriptive Statistics - Iris Data Set')
 print('======================================')
-print(iris_data.describe(percentiles=[0.5]))
+print(iris_data.describe())
 
 # Isolate each Iris species class and get a basic data description
 print('\nDescriptive Statistics - Iris-setosa')
 print('======================================')
 setosa = iris_data["iris_class"] == "Iris-setosa"
-print(iris_data[setosa].describe(percentiles=[.5]))
+print(iris_data[setosa].describe())
 
 print('\nDescriptive Statistics - Iris-versicolor')
 print('======================================')
 versicolor = iris_data["iris_class"] == "Iris-versicolor"
-print(iris_data[versicolor].describe(percentiles=[.5]))
+print(iris_data[versicolor].describe())
 
 print('\nDescriptive Statistics - Iris-virginica')
 print('======================================')
 virginica = iris_data["iris_class"] == "Iris-virginica"
-print(iris_data[virginica].describe(percentiles=[.5]))
+print(iris_data[virginica].describe())
+
+# Box plot of the data set - saved to the images folder in the project repo
+# for inclusion in the readme via 
+bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
+                               'petal_length', 'petal_width'], figsize=(10, 8))
+plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.ylabel('Centimetres')
+plt.savefig('./images/box_plot.png', bbox_inches='tight')
+plt.show()
 
 
 
-# data_string = str(iris_data.describe(percentiles=[0.5]))
-# f.write(data_string)
-
-# data_string = str(iris_data.groupby('iris_class').describe())
-# f.write(data_string)
-f.close()
-
-
-# setosa_data = iris_data[setosa]
-# print(setosa_data)
 
 
 
