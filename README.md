@@ -124,7 +124,7 @@ While numerical statistical descriptions are useful in getting an initial summar
 ##### Box Plot
 The box plot is a visual representation of five numbers which we outputted in the data description above namely; minimum, first quartile, median, third quartile, and maximum as shown in the image below[[5]](#references). The central rectangle spans from the first quartile to the third quartile. This region is know as the interquartile range (IQR). The median is shown in the IQR and the plot "whiskers" show the maximum and minimum locations[[5]](#references).
 
-<p align="centre">
+<p align="center">
   <img src="../master/images/box_plot_description.png" >
 </p>
 
