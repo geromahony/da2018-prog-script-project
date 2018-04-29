@@ -106,7 +106,7 @@ While numerical statistical descriptions are useful in getting an initial summar
 ### Conclusions
 
 ---
-### References
+### References <div style="text-align: right"> [Go to Top](https://github.com/geromahony/da2018-prog-script-project#introduction) </div>
 
 [1] Iris data set. UCI Machine Learning Repository. 
 	University of California, Irvine, School of Information and Computer Sciences
