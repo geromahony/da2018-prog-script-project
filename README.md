@@ -232,6 +232,21 @@ Each Iris class is clearly defined by colour and as before there is strong simil
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
 
+It is clear that data analysis is easily facilitated in the Python programming language with the availability of data processing and visualisation libraries such as [_Numpy_](http://www.numpy.org/), [_Pandas_](http://pandas.pydata.org/), [_Matplotlib_](https://matplotlib.org/) & [_Seaborn_](https://seaborn.pydata.org/) which were used in this analysis. There are numerious other open source libraries such as[[6]](#references) 
+
+ * [_Bokeh_](https://bokeh.pydata.org/en/latest/) Which is used for creating interactive plots, dashboards and data applications on modern web-browsers.
+ * [_Blaze_](http://blaze.pydata.org/) Which is used for extending the capability of Numpy and Pandas to distributed and streaming datasets. 
+ * [_Requests_](http://docs.python-requests.org/en/master/) Which is a web access library.
+ * [_SciPy_](https://www.scipy.org/) Which stands for scientific Python and is a useful library for variety of high level science and engineering modules like discrete Fourier transform, Linear Algebra, Optimization and Sparse matrices.
+ * [_Scikit Learn_](http://scikit-learn.org/stable/) Which is a maachine learning library.
+ * [_Statsmodels_](https://www.statsmodels.org/stable/index.html) Which is used for statistical modeling.
+ * [_Scrapy_](https://scrapy.org/) Which is a web crawling framework. 
+ * [_SymPy_](http://www.sympy.org/en/index.html) Which is used for symbolic mathematical computations.
+
+ The availablity of these languages make Python the language of choice for data analysis today.
+
+ The analysis caried out on the Iris data set in this project generated descriptive statistical properties of mean, standard deviation, min, 1st Quartile (25th percentile), median (50th percentile), 3rd Quartile (75th percentile) & max for the data set and the species subsets also. A more indept analysis using varioous statistical visualisations such as box plots, histograms and scatter plots has shown various aspects of the data such as outliers and correlerations between the two Iris species Versicolor and Virgiinica. It has also shown a distiinction between the third Iris species Setosa and the previous two. 
+ 
 ---
 ### References 
 <p align="right">
@@ -250,5 +265,8 @@ Each Iris class is clearly defined by colour and as before there is strong simil
 
 [5] Kirkman, T.W. (1996) Statistics to Use.
 	http://www.physics.csbsju.edu/stats/ Retrieved April 29th 2018
+
+[6] Analytics Vidhya.
+	https://www.analyticsvidhya.com/ Retrieved April 29th 2018
 
 ---
