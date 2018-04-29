@@ -9,7 +9,8 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
  * **[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
  	* **[Data Import](#data-import)**<br>
     * **[Data Description](#data-description)**<br>
-    * **[Data Visualisation](#data-visualisation)**<br>
+    	* **[Box Plot](#box-plot)**<br>
+    	* **[Histogram Plot](#histogram-plot)**<br>v
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -118,7 +119,7 @@ The same method can be used to describe the other two species classes:
 |75%  |    6.90000  |   3.175000  |    5.875000  |    2.30000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
-While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format.
+While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format. 
 
 #### Data Visualisation
 ##### Box Plot
@@ -128,11 +129,33 @@ The box plot is a visual representation of five numbers which we outputted in th
   <img src="../master/images/box_plot_description.png" >
 </p>
 
-The box plot of the Iris data set is shown below, which when compared to the numbers in the table above for the description, is as expected as the numbers correspond to diagram:  
+The box plot of the Iris data set is shown below and is easily generated with the following code:
+```python
+# Box plot of the data set - saved to the images folder in the
+# project repo for inclusion in the readme via an image link
+
+bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
+                               'petal_length', 'petal_width'], figsize=(10, 8))
+plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.ylabel('Centimetres')
+plt.savefig('./images/box_plot.png', bbox_inches='tight')
+```
+
+The plot Title and Y Axis label are easily added the _matplotlib.pyplot_ methods _title_ and _ylabel_. 
+
+The box plot, when compared to the numbers in the table above for the description, is as expected as the numbers correspond to diagram:  
 
 ![alt text](../master/images/box_plot.png "Iris Data Set - Box Plot")
 
-This visual representation doesn't give us much more information apart from the outliers  
+This visual representation doesn't give us much more information apart from the outliers shown in the Sepal Width box plot as unfilled circles above and below the max and min whiskers. Given their proximity to the whiskers these can be described as suspected outliers and may deserve further consideration. With this in mind our next visual analysis should be a histogram plot.
+
+##### Histogram Plot
+
+A histogram is a type of bar chart that displays the frequencies of a data set. It plots the frequency on the vertical axis and the variable being measured on the horixontal axis.
+
+![alt text](../master/images/histogram_plot.png "Iris Data Set - Histogram Plot")
+
+
 ---
 ### Conclusions
 <p align="right">
