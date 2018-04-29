@@ -121,6 +121,10 @@ The same method can be used to describe the other two species classes:
 |75%  |    6.90000  |   3.175000  |    5.875000  |    2.30000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
+
 While numerical statistical descriptions are useful in getting an initial summarisation of the data, it may be easier to make an assesment of the data by displaying it visually in plot format. 
 
 #### Data Visualisation
@@ -155,6 +159,10 @@ The box plot, when compared to the numbers in the table above for the descriptio
 
 This visual representation doesn't give us much more information apart from the outliers shown in the Sepal Width box plot as unfilled circles above and below the max and min whiskers. Given their proximity to the whiskers these can be described as suspected outliers and may deserve further consideration. With this in mind our next visual analysis should be a closer look at the Iris species. The box plot can be grouped by the species class as follows:
 
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
+
 ```python
 # Box plot of the different species by grouping by Iris class
 bps = iris_data.boxplot(by='iris_class', figsize=(10, 8))
@@ -164,6 +172,10 @@ plt.savefig('./images/box_plot_by_class.png', bbox_inches='tight')
 ![alt text](../master/images/box_plot_by_class.png "Iris Data Set - Box Plot by Iris Class")
 
 This plot shows us that there are more suspected outliers in the Iris-setosa class in both petal length and width, with one suspected outlier in the Iris-versicolor class for petal length. The Iris-virginica class is also showing a couple of outliers for both sepal length and width. The shapes of the box plots are also interesting in that they are similar and closer together between the Iris Versicolor and Virginica classes suggesting more simiiilarities between these two species of Iris. Further information about the data can be found from histogram plots. 
+
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
 
 ##### Histogram Plot
 
@@ -226,33 +238,36 @@ plt.savefig('./images/hue_scatter_plot.png')
 
 Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables while the Iris-setosa species is clearly distinct and grouped on its own across all feature pairings. 
 
----
-### Conclusions
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
+
+---
+### Conclusions
+
 
 The analysis caried out on the Iris data set in this project generated descriptive statistical properties of mean, standard deviation, min, 1st Quartile (25th percentile), median (50th percentile), 3rd Quartile (75th percentile) & max for the data set and the species subsets also. A more indept analysis using various statistical visualisations such as box plots, histograms and scatter plots has shown various aspects of the data such as outliers and correlerations between the two Iris species Versicolor and Virgiinica. It has also shown a distiinction between the third Iris species Setosa and the previous two.
 
 It is clear that data analysis is easily facilitated in the [_Python_](https://www.python.org/) programming language with the availability of data processing and visualisation libraries such as [_Numpy_](http://www.numpy.org/), [_Pandas_](http://pandas.pydata.org/), [_Matplotlib_](https://matplotlib.org/) & [_Seaborn_](https://seaborn.pydata.org/) which were used in this analysis. There are numerious other open source libraries such as[[6]](#references):
 
- * [_Bokeh_](https://bokeh.pydata.org/en/latest/) <br>Which is used for creating interactive plots, dashboards and data applications on modern web-browsers.
- * [_Blaze_](http://blaze.pydata.org/) <br>Which is used for extending the capability of Numpy and Pandas to distributed and streaming datasets. 
- * [_Requests_](http://docs.python-requests.org/en/master/) <br>Which is a web access library.
- * [_SciPy_](https://www.scipy.org/) <br>Which stands for scientific Python and is a useful library for variety of high level science and engineering modules like discrete Fourier transform, Linear Algebra, Optimization and Sparse matrices.
- * [_Scikit Learn_](http://scikit-learn.org/stable/) <br>Which is a maachine learning library.
- * [_Statsmodels_](https://www.statsmodels.org/stable/index.html) <br>Which is used for statistical modeling.
- * [_Scrapy_](https://scrapy.org/) <br>Which is a web crawling framework. 
- * [_SymPy_](http://www.sympy.org/en/index.html) <br>Which is used for symbolic mathematical computations.
+ * [_Bokeh_](https://bokeh.pydata.org/en/latest/) Which is used for creating interactive plots, dashboards and data applications on modern web-browsers.
+ * [_Blaze_](http://blaze.pydata.org/) Which is used for extending the capability of Numpy and Pandas to distributed and streaming datasets. 
+ * [_Requests_](http://docs.python-requests.org/en/master/) Which is a web access library.
+ * [_SciPy_](https://www.scipy.org/) Which stands for scientific Python and is a useful library for variety of high level science and engineering modules like discrete Fourier transform, Linear Algebra, Optimization and Sparse matrices.
+ * [_Scikit Learn_](http://scikit-learn.org/stable/) Which is a machine learning library.
+ * [_Statsmodels_](https://www.statsmodels.org/stable/index.html) Which is used for statistical modeling.
+ * [_Scrapy_](https://scrapy.org/) Which is a web crawling framework. 
+ * [_SymPy_](http://www.sympy.org/en/index.html) Which is used for symbolic mathematical computations.
 
  The availablity of these languages make Python the language of choice for data analysis today.
 
- 
----
-### References 
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
+ 
+---
+### References 
+
 
 [1] Iris data set. UCI Machine Learning Repository. 
 	University of California, Irvine, School of Information and Computer Sciences
