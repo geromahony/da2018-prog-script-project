@@ -24,6 +24,8 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from pandas.plotting import scatter_matrix
+import seaborn as sbn
 
 # Read in the Iris data set using Pandas to a data frame
 iris_data = pd.read_csv('./IrisData/iris.data.csv',
@@ -77,35 +79,16 @@ print(iris_data[virginica].describe())
 # plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
 # plt.show()
 
-hss = iris_data[setosa].hist(column=['sepal_length', 'sepal_width',
-                                     'petal_length', 'petal_width'], figsize=(10, 8))
-plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Setosa Data Set')
-# plt.text(0, -3, 'Centimetres')
-# plt.text(3, -3, 'Centimetres')
-# plt.text(-1.25, 10, 'Frequency', rotation='vertical')
-# plt.text(-1.25, 30, 'Frequency', rotation='vertical')
-plt.savefig('./images/histogram_plot_setosa.png', bbox_inches='tight')
+# scatter_matrix(iris_data, figsize=(10, 8))
+# plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+# plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
 # plt.show()
 
-hsver = iris_data[versicolor].hist(column=['sepal_length', 'sepal_width',
-                                           'petal_length', 'petal_width'], figsize=(10, 8))
-plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Versicolor Data Set')
-# plt.text(0, -3, 'Centimetres')
-# plt.text(3, -3, 'Centimetres')
-# plt.text(-1.25, 10, 'Frequency', rotation='vertical')
-# plt.text(-1.25, 30, 'Frequency', rotation='vertical')
-plt.savefig('./images/histogram_plot_versicolor.png', bbox_inches='tight')
-# plt.show()
+pp = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/hue_scatter_plot.png')
+plt.show()
 
-hsvir = iris_data[virginica].hist(column=['sepal_length', 'sepal_width',
-                                           'petal_length', 'petal_width'], figsize=(10, 8))
-plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Virginica Data Set')
-# plt.text(0, -3, 'Centimetres')
-# plt.text(3, -3, 'Centimetres')
-# plt.text(-1.25, 10, 'Frequency', rotation='vertical')
-# plt.text(-1.25, 30, 'Frequency', rotation='vertical')
-plt.savefig('./images/histogram_plot_virginica.png', bbox_inches='tight')
-# plt.show()
 
 
 

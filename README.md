@@ -12,6 +12,7 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
     * **[Data Visualisation](#data-visualisation)**<br>
     	* **[Box Plot](#box-plot)**<br>
     	* **[Histogram Plot](#histogram-plot)**<br>
+    	* **[Scatter Plot](#scatter-plot)**<br>
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -191,13 +192,35 @@ This time the plot and axis titles are defined using the _suptitle_ & _text_ met
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
 
-An examination of the histogram plots show that the data has multiple peaks which indicates that there are outliers in the data and also seperate groupings within this data so it is worth looking at histograms of the individual species.
+An examination of the histogram plots show that the data has multiple peaks which indicates that there are outliers in the data and also seperate groupings within this data so it is worth looking at additional plots such as scatters.
 
-![alt text](../master/images/histogram_plot_setosa.png "Iris Setosa Data Set - Histogram Plot")
+##### Scatter Plot
 
-![alt text](../master/images/histogram_plot_versicolor.png "Iris Versicolor Data Set - Histogram Plot")
+The _Pandas_ Scatter plot allows each of the columns in the data frame to be plotted against each other. The code to generate this plot is as follows:
 
-![alt text](../master/images/histogram_plot_virginica.png "Iris Virginica Data Set - Histogram Plot")
+```python
+from pandas.plotting import scatter_matrix
+
+scatter_matrix(iris_data, figsize=(10, 8))
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
+```
+
+![alt text](../master/images/scatter_plot.png "Iris Data Set - Scatter Plot")
+
+It is not very clear from the similar colour of the two columns plotted against each other in the above plot so the [_Seaborn_](https://seaborn.pydata.org/) statistical visualisation library provides an easier method to generate a more descernable plot:
+
+```python
+import seaborn as sbn
+
+pp = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/hue_scatter_plot.png')
+```
+
+![alt text](../master/images/hue_scatter_plot.png "Iris Data Set - Scatter Plot")
+
+Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables. 
 
 ---
 ### Conclusions
