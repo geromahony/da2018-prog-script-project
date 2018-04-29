@@ -105,6 +105,8 @@ The same method can be used to describe the other two species classes:
 
 While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format.
 
+![alt text](../blob/master/images/box_plot.png)
+
 ---
 ### Conclusions
 <p align="right">
