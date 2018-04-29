@@ -33,17 +33,36 @@ iris_data = pd.read_csv('./IrisData/iris.data.csv',
                                'petal_length', 'petal_width', 'iris_class'])
 
 # First step is to get a basic description of the data, including max, min, median & standard deviation
-# print(iris_data["iris_class"].describe())
-data_string = str(iris_data.describe(percentiles=[0.5]))
-# data_string =
-# print(data_string)
-f.write(data_string)
+print('Descriptive Statistics - Iris Data Set')
+print('======================================')
+print(iris_data.describe(percentiles=[0.5]))
+
+# Isolate each Iris species class and get a basic data description
+print('\nDescriptive Statistics - Iris-setosa')
+print('======================================')
+setosa = iris_data["iris_class"] == "Iris-setosa"
+print(iris_data[setosa].describe(percentiles=[.5]))
+
+print('\nDescriptive Statistics - Iris-versicolor')
+print('======================================')
+versicolor = iris_data["iris_class"] == "Iris-versicolor"
+print(iris_data[versicolor].describe(percentiles=[.5]))
+
+print('\nDescriptive Statistics - Iris-virginica')
+print('======================================')
+virginica = iris_data["iris_class"] == "Iris-virginica"
+print(iris_data[virginica].describe(percentiles=[.5]))
+
+
+
+# data_string = str(iris_data.describe(percentiles=[0.5]))
+# f.write(data_string)
 
 # data_string = str(iris_data.groupby('iris_class').describe())
 # f.write(data_string)
 f.close()
 
-# setosa = iris_data["iris_class"] == "Iris-setosa"
+
 # setosa_data = iris_data[setosa]
 # print(setosa_data)
 
