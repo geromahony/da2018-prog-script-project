@@ -5,10 +5,10 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
 
 ---
 ### Table of Contents
-**[Introduction](#introduction)**<br>
-**[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
-**[Conclusions](#conclusions)**<br>
-**[References](#references)**<br>
+ * **[Introduction](#introduction)**<br>
+ * **[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
+ * **[Conclusions](#conclusions)**<br>
+ * **[References](#references)**<br>
 
 ### Introduction
 
