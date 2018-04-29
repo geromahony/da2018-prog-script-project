@@ -13,6 +13,7 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
     	* **[Box Plot](#box-plot)**<br>
     	* **[Histogram Plot](#histogram-plot)**<br>
     	* **[Scatter Plot](#scatter-plot)**<br>
+    * **[Further Analysis](#further-analysis)**<br>
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -247,12 +248,16 @@ Each Iris class is clearly defined by colour and as before there is strong simil
 </p>
 
 ---
-### Conclusions
+#### Further Analysis
 
+As mentioned in the introduction, the Iris data set is widely used in data science. One interesting use of the data set is the inclusion in the [_Scikit Learn_](http://scikit-learn.org/stable/) machine learning library as a standard example for supervised learning [[6]](#references). Supervised learning is the process of an algorithm learning from a training dataset so that it learns a mappiing function between input and output variables. To do this the algorithm iteratively makes predictions on the training data and is corrected by the teacher. Learning stops when the algorithm achieves an acceptable level of performance. In the Scikit example the Iris data set is a classification task where the Iris types must be identified from their petal & sepal length and width. The example algorithm uses a simple classifier, the K-Nearest Neighbour as the learning method. Full details of the example can be found [here](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html).
+
+---
+### Conclusions
 
 The analysis caried out on the Iris data set in this project generated descriptive statistical properties of mean, standard deviation, min, 1st Quartile (25th percentile), median (50th percentile), 3rd Quartile (75th percentile) & max for the data set and the species subsets also. A more indept analysis using various statistical visualisations such as box plots, histograms and scatter plots has shown various aspects of the data such as outliers and correlerations between the two Iris species Versicolor and Virgiinica. It has also shown a distiinction between the third Iris species Setosa and the previous two.
 
-It is clear that data analysis is easily facilitated in the [_Python_](https://www.python.org/) programming language with the availability of data processing and visualisation libraries such as [_Numpy_](http://www.numpy.org/), [_Pandas_](http://pandas.pydata.org/), [_Matplotlib_](https://matplotlib.org/) & [_Seaborn_](https://seaborn.pydata.org/) which were used in this analysis. There are numerious other open source libraries such as[[6]](#references):
+It is clear that data analysis is easily facilitated in the [_Python_](https://www.python.org/) programming language with the availability of data processing and visualisation libraries such as [_Numpy_](http://www.numpy.org/), [_Pandas_](http://pandas.pydata.org/), [_Matplotlib_](https://matplotlib.org/) & [_Seaborn_](https://seaborn.pydata.org/) which were used in this analysis. There are numerious other open source libraries such as[[7]](#references):
 
  * [_Bokeh_](https://bokeh.pydata.org/en/latest/) Which is used for creating interactive plots, dashboards and data applications on modern web-browsers.
  * [_Blaze_](http://blaze.pydata.org/) Which is used for extending the capability of Numpy and Pandas to distributed and streaming datasets. 
@@ -286,7 +291,10 @@ It is clear that data analysis is easily facilitated in the [_Python_](https://w
 [5] Kirkman, T.W. (1996) Statistics to Use.
 	http://www.physics.csbsju.edu/stats/ Retrieved April 29th 2018
 
-[6] Analytics Vidhya.
+[6] Scikit Learn.
+	http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html  Retrieved April 29th 2018
+
+[7] Analytics Vidhya.
 	https://www.analyticsvidhya.com/ Retrieved April 29th 2018
 
 ---
