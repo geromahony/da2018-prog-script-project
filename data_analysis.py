@@ -55,49 +55,53 @@ print(iris_data[virginica].describe())
 
 # Box plot of the data set - saved to the images folder in the project repo
 # for inclusion in the readme via an image link
-# bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
-#                                'petal_length', 'petal_width'], figsize=(10, 8))
-# plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.ylabel('Centimetres')
-# plt.savefig('./images/box_plot.png', bbox_inches='tight')
+bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
+                               'petal_length', 'petal_width'], figsize=(10, 8))
+plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.ylabel('Centimetres')
+plt.savefig('./images/box_plot.png', bbox_inches='tight')
 # plt.show()
 
 # Box plot of the different species by grouping by Iris class
-# bps = iris_data.boxplot(by='iris_class', figsize=(10, 8))
-# plt.savefig('./images/box_plot_by_class.png', bbox_inches='tight')
+bps = iris_data.boxplot(by='iris_class', figsize=(10, 8))
+plt.savefig('./images/box_plot_by_class.png', bbox_inches='tight')
 # plt.show()
 
 # Histogram plot of the data set - saved to the images folder in the
 # project repo for inclusion in the readme via an image link
-# hist = iris_data.hist(column=['sepal_length', 'sepal_width',
-#                                'petal_length', 'petal_width'], figsize=(10, 8))
-# plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.text(-0.7, -8, 'Centimetres')
-# plt.text(2.8, -8, 'Centimetres')
-# plt.text(-2, 75, 'Frequency', rotation='vertical')
-# plt.text(-2, 25, 'Frequency', rotation='vertical')
-# plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
+hist = iris_data.hist(column=['sepal_length', 'sepal_width',
+                               'petal_length', 'petal_width'], figsize=(10, 8))
+plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.text(-0.7, -8, 'Centimetres')
+plt.text(2.8, -8, 'Centimetres')
+plt.text(-2, 75, 'Frequency', rotation='vertical')
+plt.text(-2, 25, 'Frequency', rotation='vertical')
+plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
 # plt.show()
 
-# scatter_matrix(iris_data, figsize=(10, 8))
-# plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
+# Pandas scatter matrix of the data set
+scatter_matrix(iris_data, figsize=(10, 8))
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
 # plt.show()
 
-pp = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
+# Seaborn pairplot of the data set
+ppscat = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
 plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
 plt.savefig('./images/hue_scatter_plot.png')
-plt.show()
-
-# iris = pd.melt(iris_data, 'iris_class', var_name="Measurement(cm)")
-# pp = sbn.swarmplot(data=iris, x='Measurement(cm)', y='value', hue='iris_class')
-# plt.suptitle('Swarm Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.savefig('./images/hue_scatter_plot.png')
 # plt.show()
 
-# pp = sbn.pairplot(iris_data, kind='reg', hue='iris_class')
-# plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.savefig('./images/hue_scatter_plot.png')
+# Seaborn swarmplot of the data set
+iris = pd.melt(iris_data, 'iris_class', var_name="Measurement(cm)")
+swmp = sbn.swarmplot(data=iris, x='Measurement(cm)', y='value', hue='iris_class')
+plt.suptitle('Swarm Plot of Iris Data Set')
+plt.savefig('./images/swarm_plot.png')
+# plt.show()
+
+# Seaborn pair plot with linear regression
+ppreg = sbn.pairplot(iris_data, kind='reg', hue='iris_class')
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/reg_scatter_plot.png')
 # plt.show()
 
 

@@ -240,7 +240,7 @@ plt.savefig('./images/hue_scatter_plot.png')
 
 ![alt text](../master/images/hue_scatter_plot.png "Iris Data Set - Scatter Plot")
 
-Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables while the Iris-setosa species is clearly distinct and grouped on its own across all feature pairings. 
+Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables while the Iris-setosa species is clearly linearly seperate and grouped on its own across all feature pairings. 
 
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
