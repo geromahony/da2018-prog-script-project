@@ -41,6 +41,9 @@ iris_data = pd.read_csv('./IrisData/iris.data.csv',
                                'petal_length', 'petal_width', 'iris_class'])
 ```
 The data was imported with named columns for the sepal lengths/widths, petal lengths/widths and Iris species class.
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
 
 #### Data Description
 The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facillitated with the _Pandas_ module as folows:
@@ -81,7 +84,9 @@ The variable setosa is _True_ for all Iris-setosa class and is used subsequently
 |mean |    5.00600  |   3.418000  |    1.464000  |    0.24400  |
 |std  |    0.35249  |   0.381024  |    0.173511  |    0.10721  |
 |min  |    4.30000  |   2.300000  |    1.000000  |    0.10000  |
+|25%  |    4.80000  |   3.125000  |    1.400000  |    0.20000  |
 |50%  |    5.00000  |   3.400000  |    1.500000  |    0.20000  |
+|75%  |    5.20000  |   3.675000  |    1.575000  |    0.30000  |
 |max  |    5.80000  |   4.400000  |    1.900000  |    0.60000  |
 
 The same method can be used to describe the other two species classes:
@@ -94,7 +99,9 @@ The same method can be used to describe the other two species classes:
 |mean |   5.936000  |   2.770000  |    4.260000  |   1.326000  |
 |std  |   0.516171  |   0.313798  |    0.469911  |   0.197753  |
 |min  |   4.900000  |   2.000000  |    3.000000  |   1.000000  |
+|25%  |   5.600000  |   2.525000  |    4.000000  |   1.200000  |
 |50%  |   5.900000  |   2.800000  |    4.350000  |   1.300000  |
+|75%  |   6.300000  |   3.000000  |    4.600000  |   1.500000  |
 |max  |   7.000000  |   3.400000  |    5.100000  |   1.800000  |
 
 #### Iris-virginica
@@ -105,7 +112,9 @@ The same method can be used to describe the other two species classes:
 |mean |    6.58800  |   2.974000  |    5.552000  |    2.02600  |
 |std  |    0.63588  |   0.322497  |    0.551895  |    0.27465  |
 |min  |    4.90000  |   2.200000  |    4.500000  |    1.40000  |
+|25%  |    6.22500  |   2.800000  |    5.100000  |    1.80000  |
 |50%  |    6.50000  |   3.000000  |    5.550000  |    2.00000  |
+|75%  |    6.90000  |   3.175000  |    5.875000  |    2.30000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
 While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format.
