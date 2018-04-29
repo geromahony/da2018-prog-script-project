@@ -64,6 +64,9 @@ setosa = iris_data["iris_class"] == "Iris-setosa"
 print(iris_data[setosa].describe(percentiles=[.5]))
 ```
 The variable setosa is _True_ for all Iris-setosa class and is used subsequently to describe only that class resulting in the following output:
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#introduction">[Go to Top]</a>
+</p>
 
 #### Iris-setosa
 
@@ -104,9 +107,15 @@ While numerical statistical descriptions are useful in getting an initial summar
 
 ---
 ### Conclusions
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#introduction">[Go to Top]</a>
+</p>
 
 ---
-### References <div style="text-align: right"> [Go to Top](https://github.com/geromahony/da2018-prog-script-project#introduction) </div>
+### References 
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#introduction">[Go to Top]</a>
+</p>
 
 [1] Iris data set. UCI Machine Learning Repository. 
 	University of California, Irvine, School of Information and Computer Sciences
