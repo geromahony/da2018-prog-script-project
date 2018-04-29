@@ -9,6 +9,7 @@ Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
  * **[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
  	* **[Data Import](#data-import)**<br>
     * **[Data Description](#data-description)**<br>
+    * **[Data Visualisation](#data-visualisation)**<br>
  * **[Conclusions](#conclusions)**<br>
  * **[References](#references)**<br>
 
@@ -76,7 +77,7 @@ The variable setosa is _True_ for all Iris-setosa class and is used subsequently
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
 </p>
 
-#### Iris-setosa
+**Iris-setosa**
 
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
@@ -91,7 +92,7 @@ The variable setosa is _True_ for all Iris-setosa class and is used subsequently
 
 The same method can be used to describe the other two species classes:
 
-#### Iris-versicolor
+**Iris-versicolor**
 
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
@@ -104,7 +105,7 @@ The same method can be used to describe the other two species classes:
 |75%  |   6.300000  |   3.000000  |    4.600000  |   1.500000  |
 |max  |   7.000000  |   3.400000  |    5.100000  |   1.800000  |
 
-#### Iris-virginica
+**Iris-virginica**
 
 |     |sepal_length | sepal_width | petal_length | petal_width |
 |:---:|:-----------:|:-----------:|:------------:|:-----------:|
@@ -119,8 +120,17 @@ The same method can be used to describe the other two species classes:
 
 While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format.
 
+#### Data Visualisation
+##### Box Plot
+The box plot is a visual representation of five numbers which we outputted in the data description above namely; minimum, first quartile, median, third quartile, and maximum as shown in the image below[[5]](#references). The central rectangle spans from the first quartile to the third quartile. This region is know as the interquartile range (IQR). The median is shown as a green line in the IQR and the plot "whiskers" show the maximum and minimum locations[[5]](#references).
+
+![alt text](../master/images/box_plot_description.png "Box Plot Description")
+
+The box plot of the Iris data set is shown below, which when compared to the numbers in the table above for the description, is as expected as the numbers correspond to diagram:  
+
 ![alt text](../master/images/box_plot.png "Iris Data Set - Box Plot")
 
+This visual representation doesn't give us much more information apart from the outliers  
 ---
 ### Conclusions
 <p align="right">
@@ -142,5 +152,8 @@ While numerical statistical descriptions are useful in getting an initial summar
 [3] Anderson, E., “The Irises of the Gaspe peninsula,” Bull. Amer. Iris Soc., vol.  59,  pp.  2–5,  1935.
 
 [4] Bezdek, J. C., Keller, J. M., Krishnapuram, R., Kuncheva, L. I., & Pal, N. R., "Will the real iris data please stand up?," in IEEE Transactions on Fuzzy Systems, vol. 7, no. 3, pp. 368-369, Jun 1999.
+
+[5] Kirkman, T.W. (1996) Statistics to Use.
+	http://www.physics.csbsju.edu/stats/ Retrieved April 29th 2018
 
 ---
