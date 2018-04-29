@@ -1,29 +1,29 @@
 ## Data Analytics 2018 - Programming and Scripting Module 
 ## Project 2018 - Fisher's Iris Data Set Analysis
 
-Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](https://github.com/geromahony/da2018-prog-script-project#references)
+Data:- [Iris Data Set](IrisData/iris.data.txt) [[1]](#references)
 
 ---
 ### Table of Contents
-**[Introduction](https://github.com/geromahony/da2018-prog-script-project#introduction)**<br>
-**[Iris Data Set Analysis](https://github.com/geromahony/da2018-prog-script-project#iris-data-set-analysis)**<br>
-**[Conclusions](https://github.com/geromahony/da2018-prog-script-project#conclusions)**<br>
-**[References](https://github.com/geromahony/da2018-prog-script-project#references)**<br>
+**[Introduction](#introduction)**<br>
+**[Iris Data Set Analysis](#iris-data-set-analysis)**<br>
+**[Conclusions](#conclusions)**<br>
+**[References](#references)**<br>
 
 ### Introduction
 
-The Iris Data Set was first examined by British statistician Ronald Aylmer Fisher in his paper 'The use of multiple measurements in taxonomic problems' published in 1936 [[2]](https://github.com/geromahony/da2018-prog-script-project#references). In the paper he credits Dr E. Anderson for the data measurement and it is sometimes also referred to as Anderson's Iris Dats Set [[3]](https://github.com/geromahony/da2018-prog-script-project#references) in the literature because of this.
+The Iris Data Set was first examined by British statistician Ronald Aylmer Fisher in his paper 'The use of multiple measurements in taxonomic problems' published in 1936 [[2]](#references). In the paper he credits Dr E. Anderson for the data measurement and it is sometimes also referred to as Anderson's Iris Dats Set [[3]](#references) in the literature because of this.
 
-The data is comprised of 150 measurements in centimetres. The measurements are of the flowers of fifty plants of three species of Iris; Iris-setosa, Iris-versicolor & Iris-virginica referred to as classes. Four flower measurements are given for each class; Sepal length, Sepal width, Petal length & Petal width [[2]](https://github.com/geromahony/da2018-prog-script-project#references). One class is linearly separable from the other 2; the latter are not linearly separable from each other [[1]](https://github.com/geromahony/da2018-prog-script-project#references).
+The data is comprised of 150 measurements in centimetres. The measurements are of the flowers of fifty plants of three species of Iris; Iris-setosa, Iris-versicolor & Iris-virginica referred to as classes. Four flower measurements are given for each class; Sepal length, Sepal width, Petal length & Petal width [[2]](#references). One class is linearly separable from the other 2; the latter are not linearly separable from each other [[1]](#references).
 
-A search of the literature reveals that the data set has become widely used as testing data essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [[4]](https://github.com/geromahony/da2018-prog-script-project#references) have observed that they are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
+A search of the literature reveals that the data set has become widely used as testing data essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [[4]](#references) have observed that they are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
  
 | Vector No.| UCI Data        | Fisher Data     |
 |:---------:|:---------------:|:---------------:|
 |35         | 4.9,3.1,1.5,0.1 | 4.9,3.1,1.5,0.2 |
 |38         | 4.9,3.1,1.5,0.1 | 4.9,3.6,1.4,0.1 |
  
-For the purposes of this project the data in this repository is as taken from the UCI Machine Learning Repository [[1]](https://github.com/geromahony/da2018-prog-script-project#references).
+For the purposes of this project the data in this repository is as taken from the UCI Machine Learning Repository [[1]](#references).
 
 ---
 ### Iris Data Set Analysis
