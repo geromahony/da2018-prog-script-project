@@ -52,12 +52,23 @@ virginica = iris_data["iris_class"] == "Iris-virginica"
 print(iris_data[virginica].describe())
 
 # Box plot of the data set - saved to the images folder in the project repo
-# for inclusion in the readme via 
-bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
+# for inclusion in the readme via an image link
+# bp = iris_data.boxplot(column=['sepal_length', 'sepal_width',
+#                                'petal_length', 'petal_width'], figsize=(10, 8))
+# plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+# plt.ylabel('Centimetres')
+# plt.savefig('./images/box_plot.png', bbox_inches='tight')
+# plt.show()
+
+hist = iris_data.hist(column=['sepal_length', 'sepal_width',
                                'petal_length', 'petal_width'], figsize=(10, 8))
-plt.title('Box Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-plt.ylabel('Centimetres')
-plt.savefig('./images/box_plot.png', bbox_inches='tight')
+# plt.title('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.text(-0.5, -6, 'Centimetres')
+plt.text(3, -6, 'Centimetres')
+plt.text(-2, 75, 'Frequency', rotation='vertical')
+plt.text(-2, 25, 'Frequency', rotation='vertical')
+plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
 plt.show()
 
 
