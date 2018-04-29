@@ -20,7 +20,7 @@ The Iris Data Set was first examined by British statistician Ronald Aylmer Fishe
 
 The data is comprised of 150 measurements in centimetres. The measurements are of the flowers of fifty plants of three species of Iris; Iris-setosa, Iris-versicolor & Iris-virginica referred to as classes. Four flower measurements are given for each class; Sepal length, Sepal width, Petal length & Petal width [[2]](#references). One class is linearly separable from the other 2; the latter are not linearly separable from each other [[1]](#references).
 
-A search of the literature reveals that the data set has become widely used as testing data essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [[4]](#references) have observed that they are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
+A search of the literature reveals that the data set has become widely used as testing data, essentially becoming the 'Hello World!' of Data Science. Bezdek et al. [[4]](#references) have observed that there are at least two distinct published replications of the original data citing two different errors in the University of California at Irvine (UCI) machine learning data set. Two vectors in the UCI Iris-setosa class differ from those published in Fisher's paper:
  
 | Vector No.| UCI Data        | Fisher Data     |
 |:---------:|:---------------:|:---------------:|
@@ -48,7 +48,7 @@ The data was imported with named columns for the sepal lengths/widths, petal len
 </p>
 
 #### Data Description
-The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facillitated with the _Pandas_ module as folows:
+The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facilitated with the _Pandas_ module as folows:
 ```python
 print(iris_data.describe())
 ```
@@ -65,7 +65,7 @@ This results in the following output:
 |75%  |   6.400000  |   3.300000  |    5.100000  |   1.800000  |
 |max  |   7.900000  |   4.400000  |    6.900000  |   2.500000  |
 
-As can be seen from the table above the data is described in terms of mean, standard deviation, min, 1st Quartile(25th percentile), median(50th percentile), 3rd Quartile(75th percentile) & max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
+As can be seen from the table above, the data is described in terms of mean, standard deviation, min, 1st Quartile (25th percentile), median (50th percentile), 3rd Quartile (75th percentile) & max for each column of data across all three Iris species classes, which have 50 observations in each giving a total count of 150 observations.
 
 It is also possible to isolate each class data to be described separately if required as follows:
 ```python
@@ -119,11 +119,11 @@ The same method can be used to describe the other two species classes:
 |75%  |    6.90000  |   3.175000  |    5.875000  |    2.30000  |
 |max  |    7.90000  |   3.800000  |    6.900000  |    2.50000  |
 
-While numerical statistical descriptions are useful in getting an initial summarisation of the data it may be easier to make an assesment of the data by displaying it visually in plot format. 
+While numerical statistical descriptions are useful in getting an initial summarisation of the data, it may be easier to make an assesment of the data by displaying it visually in plot format. 
 
 #### Data Visualisation
 ##### Box Plot
-The box plot is a visual representation of five numbers which we outputted in the data description above namely; minimum, first quartile, median, third quartile, and maximum as shown in the image below[[5]](#references). The central rectangle spans from the first quartile to the third quartile. This region is know as the interquartile range (IQR). The median is shown in the IQR and the plot "whiskers" show the maximum and minimum locations[[5]](#references).
+The box plot is a visual representation of five numbers which we outputted in the data description above namely; minimum, first quartile, median, third quartile, and maximum as shown in the image below[[5]](#references). The central rectangle spans from the first quartile to the third quartile. This region is known as the interquartile range (IQR). The median is shown in the IQR and the plot "whiskers" show the maximum and minimum locations[[5]](#references).
 
 <p align="center">
   <img src="../master/images/box_plot_description.png" >
@@ -141,9 +141,9 @@ plt.ylabel('Centimetres')
 plt.savefig('./images/box_plot.png', bbox_inches='tight')
 ```
 
-The plot Title and Y Axis label are easily added the _matplotlib.pyplot_ methods _title_ and _ylabel_. 
+The plot Title and Y Axis label are easily added using the _matplotlib.pyplot_ methods _title_ and _ylabel_. 
 
-The box plot, when compared to the numbers in the table above for the description, is as expected as the numbers correspond to diagram:  
+The box plot, when compared to the numbers in the table above for the description, is as expected as the numbers correspond to the diagram:  
 
 ![alt text](../master/images/box_plot.png "Iris Data Set - Box Plot")
 
@@ -151,7 +151,7 @@ This visual representation doesn't give us much more information apart from the 
 
 ##### Histogram Plot
 
-A histogram is a type of bar chart that displays the frequencies of a data set. It plots the frequency on the vertical axis and the variable being measured on the horixontal axis.
+A histogram is a type of bar chart that displays the frequencies of a data set. It plots the frequency on the vertical axis with the variable being measured on the horixontal axis.
 
 ![alt text](../master/images/histogram_plot.png "Iris Data Set - Histogram Plot")
 
