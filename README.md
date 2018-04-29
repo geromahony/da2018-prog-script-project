@@ -29,7 +29,7 @@ For the purposes of this project the data in this repository is as taken from th
 ### Iris Data Set Analysis
 
 
-The Iris data set is easily imported for data analysis using the [_Pandas_](http://pandas.pydata.org/) library, _read_csv_ method, as follows:
+The Iris data set is easily imported for data analysis using the open source [_Pandas_](http://pandas.pydata.org/) library which provides easy-to-use data structures and data analysis tools for the Python programming language. The [_Pandas_](http://pandas.pydata.org/) _read_csv_ method can be used to read the Iris data comma seperated values from file as follows:
 
 ```python
 import pandas as pd
