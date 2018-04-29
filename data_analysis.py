@@ -84,10 +84,10 @@ print(iris_data[virginica].describe())
 # plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
 # plt.show()
 
-# pp = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
-# plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-# plt.savefig('./images/hue_scatter_plot.png')
-# plt.show()
+pp = sbn.pairplot(iris_data, kind='scatter', hue='iris_class')
+plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+plt.savefig('./images/hue_scatter_plot.png')
+plt.show()
 
 # iris = pd.melt(iris_data, 'iris_class', var_name="Measurement(cm)")
 # pp = sbn.swarmplot(data=iris, x='Measurement(cm)', y='value', hue='iris_class')
@@ -95,10 +95,10 @@ print(iris_data[virginica].describe())
 # plt.savefig('./images/hue_scatter_plot.png')
 # plt.show()
 
-pp = sbn.pairplot(iris_data, kind='reg', hue='iris_class')
-plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-plt.savefig('./images/hue_scatter_plot.png')
-plt.show()
+# pp = sbn.pairplot(iris_data, kind='reg', hue='iris_class')
+# plt.suptitle('Scatter Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+# plt.savefig('./images/hue_scatter_plot.png')
+# plt.show()
 
 
 
