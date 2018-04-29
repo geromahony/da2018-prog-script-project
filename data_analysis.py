@@ -60,18 +60,21 @@ print(iris_data[virginica].describe())
 # plt.savefig('./images/box_plot.png', bbox_inches='tight')
 # plt.show()
 
+bps = iris_data.boxplot(by='iris_class', figsize=(10, 8))
+plt.savefig('./images/box_plot_by_class.png', bbox_inches='tight')
+plt.show()
 # Histogram plot of the data set - saved to the images folder in the
 # project repo for inclusion in the readme via an image link
-hist = iris_data.hist(column=['sepal_length', 'sepal_width',
-                               'petal_length', 'petal_width'], figsize=(10, 8))
-# plt.title('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
-plt.text(-0.7, -8, 'Centimetres')
-plt.text(2.8, -8, 'Centimetres')
-plt.text(-2, 75, 'Frequency', rotation='vertical')
-plt.text(-2, 25, 'Frequency', rotation='vertical')
-plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
-plt.show()
+# hist = iris_data.hist(column=['sepal_length', 'sepal_width',
+#                                'petal_length', 'petal_width'], figsize=(10, 8))
+# # plt.title('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+# plt.suptitle('Histogram Plot of Sepal Length, Sepal Width, Petal Length & Petal Width of Iris Data Set')
+# plt.text(-0.7, -8, 'Centimetres')
+# plt.text(2.8, -8, 'Centimetres')
+# plt.text(-2, 75, 'Frequency', rotation='vertical')
+# plt.text(-2, 25, 'Frequency', rotation='vertical')
+# plt.savefig('./images/histogram_plot.png', bbox_inches='tight')
+# plt.show()
 
 
 
