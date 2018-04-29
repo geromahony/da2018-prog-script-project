@@ -209,6 +209,9 @@ plt.savefig('./images/scatter_plot.png', bbox_inches='tight')
 ![alt text](../master/images/scatter_plot.png "Iris Data Set - Scatter Plot")
 
 It is not very clear from the similar colour of the two columns plotted against each other in the above plot so the [_Seaborn_](https://seaborn.pydata.org/) statistical visualisation library provides an easier method to generate a more descernable plot:
+<p align="right">
+  <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
+</p>
 
 ```python
 import seaborn as sbn
@@ -220,7 +223,7 @@ plt.savefig('./images/hue_scatter_plot.png')
 
 ![alt text](../master/images/hue_scatter_plot.png "Iris Data Set - Scatter Plot")
 
-Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables. 
+Each Iris class is clearly defined by colour and as before there is strong similarities shown between the two species Iris-versicolor and Iris-virgiinica as evidenced by the close grouping of both across a combination of petal length/width vs sepal length/width variables while the Iris-setosa species is clearly distint and grouped on its own across all feature pairings. 
 
 ---
 ### Conclusions
