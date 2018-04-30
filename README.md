@@ -51,7 +51,7 @@ The data was imported with named columns for the sepal lengths/widths, petal len
 </p>
 
 #### Data Description
-The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facilitated with the _Pandas_ module as folows:
+The first thing to do with the data is a basic analysis where descriptive statistics are generated that summarize the central tendency, dispersion and shape of a dataset’s distribution. This is easily facilitated with the _Pandas_ module as follows:
 ```python
 print(iris_data.describe())
 ```
@@ -268,7 +268,7 @@ It is clear that data analysis is easily facilitated in the [_Python_](https://w
  * [_Scrapy_](https://scrapy.org/) which is a web crawling framework. 
  * [_SymPy_](http://www.sympy.org/en/index.html) which is used for symbolic mathematical computations.
 
- The availablity of these languages make Python the language of choice for data analysis today.
+ The availablity of these libraries make Python the language of choice for data analysis today.
 
 <p align="right">
   <a href="https://github.com/geromahony/da2018-prog-script-project#table-of-contents">[Go to Top]</a>
